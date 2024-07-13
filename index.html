@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AR Photography</title>
+</head>
+
+<body>
+  <div id="app">
+
+    <div id="loader">
+      <div class="loader__line">
+        <span class="loader__line__bar"></span>
+      </div>
+    </div>
+
+    <div id="intro">
+      <div class="wrap wrap--title">
+        <h1>
+          <span>A</span>
+          <span>r</span>
+          <span>r</span>
+          <span>o</span>
+          <span>n</span>
+          <span class="space"></span>
+          <span>R</span>
+          <span>e</span>
+          <span>e</span>
+          <span>s</span>
+        </h1>
+      </div>
+      <div class="wrap wrap--subtitle">
+        <p>
+          <span>P</span>
+          <span>H</span>
+          <span>O</span>
+          <span>T</span>
+          <span>O</span>
+          <span>G</span>
+          <span>R</span>
+          <span>A</span>
+          <span>P</span>
+          <span>H</span>
+          <span>Y</span>
+        </p>
+      </div>
+      <div class="enter">
+        <button type="button">Enter</button>
+      </div>
+    </div>
+
+    <div id="cursor">
+    </div>
+
+    <div class="cover">
+      <div class="cover__slide"></div>
+
+      <div class="img__block">
+        <div class="img__overlay"></div>
+        <div class="cover__img"></div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="grid">
+        <div class="column">
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/dolphin.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/milford.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/sunset_house.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/dolphin.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/milford.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/sunset_house.webp" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="column">
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/pauls_night.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/pauls.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/bikes.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/pauls_night.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/pauls.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/bikes.webp" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="column">
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/southbank_bw.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/france_street.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/fire.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/southbank_bw.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/france_street.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/fire.webp" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="column">
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/tube.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/plane.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/surf_dark.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/tube.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/plane.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/surf_dark.webp" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="column">
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/dolphin.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/milford.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/sunset_house.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/dolphin.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/milford.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/sunset_house.webp" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="column">
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/pauls_night.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/pauls.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/bikes.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/pauls_night.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/pauls.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/bikes.webp" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="column">
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/southbank_bw.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/france_street.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/fire.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/southbank_bw.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/france_street.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/fire.webp" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="column">
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/tube.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/plane.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/surf_dark.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/tube.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/plane.webp" alt="">
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img class="grid__img" src="./img/surf_dark.webp" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
