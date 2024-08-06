@@ -33,51 +33,7 @@ function initLoadImages() {
   });
 }
 
-function initIntroAnimation() {
-  const intro = document.querySelector('#intro') as HTMLElement;
-  const enter = document.querySelector('#intro .enter') as HTMLElement;
-  const title = document.querySelector('#intro .wrap--title h1') as HTMLElement;
-  const subTitle = document.querySelector(
-    '#intro .wrap--subtitle p'
-  ) as HTMLElement;
-  const titleLetters = document.querySelectorAll(
-    '#intro h1 span'
-  ) as NodeListOf<HTMLElement>;
-  const subtitleLetters = document.querySelectorAll(
-    '#intro p span'
-  ) as NodeListOf<HTMLElement>;
-
-  const tl = gsap.timeline({
-    defaults: { duration: 0.4, ease: 'power1.inOut' },
-  });
-
-  tl.delay(0.8)
-    .fromTo(
-      titleLetters,
-      { autoAlpha: 0, x: -15, y: 60 },
-      { autoAlpha: 1, x: 0, y: 0, stagger: 0.05 }
-    )
-    .fromTo(
-      subtitleLetters,
-      { autoAlpha: 0, x: -15 },
-      { autoAlpha: 1, x: 0, stagger: 0.03 }
-    )
-    .fromTo(enter, { autoAlpha: 0 }, { autoAlpha: 1 });
-
-  enter.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    tl.to(enter, { autoAlpha: 0 })
-      .to([title, subTitle], { yPercent: 100 }, '-=0.25')
-      .to(intro, {
-        autoAlpha: 0,
-        duration: 1,
-      });
-  });
-}
-
 function init() {
-  initIntroAnimation();
   initImageMove();
   initImageTransition();
   initCursorFollow();
